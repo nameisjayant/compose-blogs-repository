@@ -28,6 +28,9 @@ fun NotificationScreen(
         )
         )
     }
+
+    // handler back press
+
     BackHandler {
         navHostController.navigate(BottomBarRoutes.HOME.routes){
             popUpTo(BottomBarRoutes.HOME.routes){
@@ -35,5 +38,4 @@ fun NotificationScreen(
             }
         }
     }
-
 }

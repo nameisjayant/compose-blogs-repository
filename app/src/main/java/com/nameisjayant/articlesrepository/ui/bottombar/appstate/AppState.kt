@@ -25,5 +25,4 @@ class AppState(
     val shouldShowBottomBar: Boolean
         @Composable get() =
             navHostController.currentBackStackEntryAsState().value?.destination?.route in routes
-
 }
