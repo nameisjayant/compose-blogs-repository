@@ -1,4 +1,4 @@
-package com.nameisjayant.articlesrepository
+package com.nameisjayant.articlesrepository.ui.bottombar
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -21,7 +21,7 @@ import com.nameisjayant.articlesrepository.ui.bottombar.navigation.BottomBarNavi
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
-class MainActivity : ComponentActivity() {
+class BottomBarActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
