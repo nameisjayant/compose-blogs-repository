@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.nameisjayant.articlesrepository.ui.stateHositing.StateHoisting
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -18,7 +19,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    LazyColumnWithMultiHeaderScreen(
+                    StateHoisting(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

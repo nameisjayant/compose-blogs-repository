@@ -4,4 +4,6 @@
     <string name="notification">Notification</string>
     <string name="profile">Profile</string>
     <string name="move_to_detail_screen">Move to Detail Screen</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
 </resources>
