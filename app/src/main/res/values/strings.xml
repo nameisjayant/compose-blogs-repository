@@ -6,4 +6,8 @@
     <string name="move_to_detail_screen">Move to Detail Screen</string>
     <string name="username">Username</string>
     <string name="email">Email</string>
+    <string name="copy_text">Copy Text</string>
+    <string name="copy_text_from_clipboard">Copy text from clipboard</string>
+    <string name="get_text_from_string_resource">Get Text From String Resource</string>
+    <string name="click_here">Click here</string>
 </resources>
