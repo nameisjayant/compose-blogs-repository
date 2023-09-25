@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
@@ -93,6 +94,19 @@ fun FocusOnTextField(
             placeholder = { Text(text = "Enter username") },
             modifier = Modifier.focusRequester(focusRequester)
         )
+    }
+
+}
+
+@Composable
+fun ClickableTextScreen(
+    modifier: Modifier = Modifier
+) {
+
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        ClickableText(text = AnnotatedString(stringResource(R.string.clickable_text)), onClick = {
+            // perform click here
+        })
     }
 
 }

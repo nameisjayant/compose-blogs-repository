@@ -10,4 +10,5 @@
     <string name="copy_text_from_clipboard">Copy text from clipboard</string>
     <string name="get_text_from_string_resource">Get Text From String Resource</string>
     <string name="click_here">Click here</string>
+    <string name="clickable_text">Clickable Text</string>
 </resources>
