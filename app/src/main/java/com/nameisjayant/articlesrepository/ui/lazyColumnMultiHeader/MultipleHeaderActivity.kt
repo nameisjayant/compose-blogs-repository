@@ -11,6 +11,7 @@ import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.CopyT
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.FocusOnTextField
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.GetStringResource
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.StopRippleEffect
+import com.nameisjayant.articlesrepository.ui.compositionLocal.CompositionLocalScreen
 import com.nameisjayant.articlesrepository.ui.stateHositing.StateHoisting
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 
@@ -23,7 +24,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    StopRippleEffect(
+                    CompositionLocalScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

@@ -11,4 +11,6 @@
     <string name="get_text_from_string_resource">Get Text From String Resource</string>
     <string name="click_here">Click here</string>
     <string name="clickable_text">Clickable Text</string>
+    <string name="hello">Hello</string>
+    <string name="child_composable_function_using_composition_local">Child Composable function using composition local</string>
 </resources>
