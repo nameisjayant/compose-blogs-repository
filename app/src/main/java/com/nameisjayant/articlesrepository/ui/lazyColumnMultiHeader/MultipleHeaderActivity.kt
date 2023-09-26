@@ -12,6 +12,9 @@ import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.Focus
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.GetStringResource
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.StopRippleEffect
 import com.nameisjayant.articlesrepository.ui.compositionLocal.CompositionLocalScreen
+import com.nameisjayant.articlesrepository.ui.modifiers.DrawBehindSomething
+import com.nameisjayant.articlesrepository.ui.modifiers.DrawContentScreen
+import com.nameisjayant.articlesrepository.ui.modifiers.DrawWithCache
 import com.nameisjayant.articlesrepository.ui.stateHositing.StateHoisting
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 
@@ -24,7 +27,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    CompositionLocalScreen(
+                    DrawWithCache(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

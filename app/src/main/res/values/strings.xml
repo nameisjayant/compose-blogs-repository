@@ -13,4 +13,5 @@
     <string name="clickable_text">Clickable Text</string>
     <string name="hello">Hello</string>
     <string name="child_composable_function_using_composition_local">Child Composable function using composition local</string>
+    <string name="hello_world">Hello world</string>
 </resources>
