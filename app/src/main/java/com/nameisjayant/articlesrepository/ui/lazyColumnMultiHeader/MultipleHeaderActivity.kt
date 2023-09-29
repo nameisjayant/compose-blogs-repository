@@ -7,15 +7,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.CopyTextFromClipBoard
-import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.FocusOnTextField
-import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.GetStringResource
-import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.StopRippleEffect
-import com.nameisjayant.articlesrepository.ui.compositionLocal.CompositionLocalScreen
-import com.nameisjayant.articlesrepository.ui.modifiers.DrawBehindSomething
-import com.nameisjayant.articlesrepository.ui.modifiers.DrawContentScreen
-import com.nameisjayant.articlesrepository.ui.modifiers.DrawWithCache
-import com.nameisjayant.articlesrepository.ui.stateHositing.StateHoisting
+import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.AnimatedVisibilityScreen
+import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.MakeCircle
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -27,7 +20,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    DrawWithCache(
+                    MakeCircle(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

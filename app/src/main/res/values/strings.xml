@@ -14,4 +14,7 @@
     <string name="hello">Hello</string>
     <string name="child_composable_function_using_composition_local">Child Composable function using composition local</string>
     <string name="hello_world">Hello world</string>
+    <string name="animated_text">Animated Text</string>
+    <string name="show_hide">Show/Hide</string>
+    <string name="custom_font_text">Custom Font Text</string>
 </resources>
