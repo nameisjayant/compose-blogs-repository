@@ -9,8 +9,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.AnimatedVisibilityScreen
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.MakeCircle
+import com.nameisjayant.articlesrepository.ui.fonts.CustomFontScreen
+import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 @OptIn(ExperimentalMaterial3Api::class)
 class MultipleHeaderActivity : ComponentActivity() {
 
@@ -20,7 +24,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    MakeCircle(
+                    MVIScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

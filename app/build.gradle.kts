@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id ("com.google.dagger.hilt.android")
 }
 
 android {
@@ -67,5 +69,19 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation("androidx.navigation:navigation-compose:2.7.2")
+    implementation("androidx.navigation:navigation-compose:2.7.3")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.5.2")
+
+    val daggerHilt = "2.47"
+    val coroutine = "1.7.1"
+
+    //dagger hilt
+    implementation("com.google.dagger:hilt-android:$daggerHilt")
+    kapt("com.google.dagger:hilt-android-compiler:$daggerHilt")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
+
+    //coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0-alpha02")
 }
