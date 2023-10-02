@@ -11,6 +11,7 @@ import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.Anima
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.MakeCircle
 import com.nameisjayant.articlesrepository.ui.fonts.CustomFontScreen
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
+import com.nameisjayant.articlesrepository.ui.paging3.domain.ui.DogsScreen
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,7 +25,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    MVIScreen(
+                    DogsScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
