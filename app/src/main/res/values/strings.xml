@@ -17,4 +17,5 @@
     <string name="animated_text">Animated Text</string>
     <string name="show_hide">Show/Hide</string>
     <string name="custom_font_text">Custom Font Text</string>
+    <string name="selectall">Select All</string>
 </resources>
