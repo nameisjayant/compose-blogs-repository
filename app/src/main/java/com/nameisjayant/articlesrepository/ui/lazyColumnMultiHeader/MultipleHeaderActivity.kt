@@ -10,6 +10,11 @@ import androidx.compose.ui.Modifier
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.AnimatedVisibilityScreen
 import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.MakeCircle
 import com.nameisjayant.articlesrepository.ui.fonts.CustomFontScreen
+import com.nameisjayant.articlesrepository.ui.modifiers.AlignModifier
+import com.nameisjayant.articlesrepository.ui.modifiers.ClipModifier
+import com.nameisjayant.articlesrepository.ui.modifiers.HorizontalScroll
+import com.nameisjayant.articlesrepository.ui.modifiers.MakeBorder
+import com.nameisjayant.articlesrepository.ui.modifiers.VerticalScroll
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.paging3.domain.ui.DogsScreen
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
@@ -25,7 +30,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    DogsScreen(
+                    ClipModifier(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
