@@ -14,6 +14,8 @@ import com.nameisjayant.articlesrepository.ui.modifiers.AlignModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.ClipModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.HorizontalScroll
 import com.nameisjayant.articlesrepository.ui.modifiers.MakeBorder
+import com.nameisjayant.articlesrepository.ui.modifiers.MarqueeText
+import com.nameisjayant.articlesrepository.ui.modifiers.OffsetModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.VerticalScroll
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.paging3.domain.ui.DogsScreen
@@ -30,7 +32,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold { innerPadding ->
-                    ClipModifier(
+                    MarqueeText(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

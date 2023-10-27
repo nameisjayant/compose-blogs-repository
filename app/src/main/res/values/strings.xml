@@ -18,4 +18,7 @@
     <string name="show_hide">Show/Hide</string>
     <string name="custom_font_text">Custom Font Text</string>
     <string name="selectall">Select All</string>
+    <string name="offset_content">Offset Content</string>
+    <string name="this_is_an_example_of_basic_marquee_text_in_jetpack_compose">This is an example of basic marquee text in jetpack compose</string>
+    <string name="basicmarqueetest">basicMarqueeTest</string>
 </resources>
