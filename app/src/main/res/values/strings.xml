@@ -21,4 +21,6 @@
     <string name="offset_content">Offset Content</string>
     <string name="this_is_an_example_of_basic_marquee_text_in_jetpack_compose">This is an example of basic marquee text in jetpack compose</string>
     <string name="basicmarqueetest">basicMarqueeTest</string>
+    <string name="bottombar_app">BottomApp Bar</string>
+    <string name="app_bar">App Bar</string>
 </resources>
