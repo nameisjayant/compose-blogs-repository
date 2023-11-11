@@ -33,6 +33,7 @@ import com.nameisjayant.articlesrepository.ui.commonThingsInJetpackCompose.MakeC
 import com.nameisjayant.articlesrepository.ui.fonts.CustomFontScreen
 import com.nameisjayant.articlesrepository.ui.modifiers.AlignModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.ClipModifier
+import com.nameisjayant.articlesrepository.ui.modifiers.HeightModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.HorizontalScroll
 import com.nameisjayant.articlesrepository.ui.modifiers.MakeBorder
 import com.nameisjayant.articlesrepository.ui.modifiers.MarqueeText
@@ -40,6 +41,9 @@ import com.nameisjayant.articlesrepository.ui.modifiers.OffsetModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.VerticalScroll
 import com.nameisjayant.articlesrepository.ui.modifiers.WeightModifierDemo
 import com.nameisjayant.articlesrepository.ui.modifiers.WeightModifierDemo2
+import com.nameisjayant.articlesrepository.ui.modifiers.WidthInModifier
+import com.nameisjayant.articlesrepository.ui.modifiers.WidthModifier
+import com.nameisjayant.articlesrepository.ui.modifiers.WrapContentWidth
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.paddings.ImePaddingDemo
 import com.nameisjayant.articlesrepository.ui.paddings.MarginDemo
@@ -61,7 +65,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold {
-                    WeightModifierDemo2()
+                    WidthInModifier()
                 }
             }
         }

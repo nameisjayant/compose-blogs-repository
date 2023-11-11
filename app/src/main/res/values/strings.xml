@@ -28,4 +28,6 @@
     <string name="padding_from_example">Padding From Example</string>
     <string name="norma_padding">Norma Padding</string>
     <string name="weight_property">Hello , This is an example of weight property in Jetpack Compose</string>
+    <string name="hello_compose">Hello, Compose!</string>
+    <string name="hello_world_how_are_you">Hello world , How are you ?</string>
 </resources>
