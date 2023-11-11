@@ -57,8 +57,8 @@ fun ArticlesRepositoryTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = transparent.toArgb()
-            window.navigationBarColor = transparent.toArgb()
+            window.statusBarColor = Purple40.toArgb()
+            window.navigationBarColor = Purple40.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }

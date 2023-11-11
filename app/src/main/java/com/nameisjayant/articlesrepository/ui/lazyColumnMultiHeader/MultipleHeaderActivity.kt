@@ -40,6 +40,9 @@ import com.nameisjayant.articlesrepository.ui.modifiers.OffsetModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.VerticalScroll
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.paddings.ImePaddingDemo
+import com.nameisjayant.articlesrepository.ui.paddings.MarginDemo
+import com.nameisjayant.articlesrepository.ui.paddings.PaddingFromBaseLineExample
+import com.nameisjayant.articlesrepository.ui.paddings.PaddingFromDemo
 import com.nameisjayant.articlesrepository.ui.paging3.domain.ui.DogsScreen
 import com.nameisjayant.articlesrepository.ui.theme.ArticlesRepositoryTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -52,11 +55,11 @@ class MultipleHeaderActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
+        // WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold {
-                  ImePaddingDemo()
+                    PaddingFromDemo()
                 }
             }
         }

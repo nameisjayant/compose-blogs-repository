@@ -23,4 +23,8 @@
     <string name="basicmarqueetest">basicMarqueeTest</string>
     <string name="bottombar_app">BottomApp Bar</string>
     <string name="app_bar">App Bar</string>
+    <string name="margin_demo">Margin Demo</string>
+    <string name="padding_from_baseline_example">Padding from BaseLine</string>
+    <string name="padding_from_example">Padding From Example</string>
+    <string name="norma_padding">Norma Padding</string>
 </resources>
