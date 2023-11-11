@@ -38,6 +38,8 @@ import com.nameisjayant.articlesrepository.ui.modifiers.MakeBorder
 import com.nameisjayant.articlesrepository.ui.modifiers.MarqueeText
 import com.nameisjayant.articlesrepository.ui.modifiers.OffsetModifier
 import com.nameisjayant.articlesrepository.ui.modifiers.VerticalScroll
+import com.nameisjayant.articlesrepository.ui.modifiers.WeightModifierDemo
+import com.nameisjayant.articlesrepository.ui.modifiers.WeightModifierDemo2
 import com.nameisjayant.articlesrepository.ui.mvi.MVIScreen
 import com.nameisjayant.articlesrepository.ui.paddings.ImePaddingDemo
 import com.nameisjayant.articlesrepository.ui.paddings.MarginDemo
@@ -59,7 +61,7 @@ class MultipleHeaderActivity : ComponentActivity() {
         setContent {
             ArticlesRepositoryTheme {
                 Scaffold {
-                    PaddingFromDemo()
+                    WeightModifierDemo2()
                 }
             }
         }
